@@ -1,0 +1,167 @@
+/* HEADER */ 
+
+h1{font-family: Roboto;}
+.pers {
+    font-size: large;
+    color:rgb(170, 109, 30);
+    text-align: center;
+}
+
+li{
+    display:inline-block;
+    padding-left:6px;
+    padding-right:6px;
+   background-color:black;}
+
+header{
+    text-align: center;
+    background-color: black;
+    font-family: Roboto;
+    padding: 25px 10px 10px 25px;
+    
+}
+header a {
+    color: white; text-align: center;            
+}
+
+header{
+    height: 73px;
+    width: 100%;   
+}
+
+header{margin:auto
+}
+
+/* HEADER FLEX-BOX */
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+
+            .navigation ul li a:hover {
+                background: #4a4a4a;
+            }
+
+
+
+/* FOOTER */
+.footer{
+    background-color:rgb(172, 173, 173);
+    font-family: Roboto light;
+    text-align: center;
+    color: aliceblue;
+    font-size: unset;
+}
+
+/* PÁRRAFO PÁGINA HISTORIA */
+
+body {
+    font-family: Arial, Helvetica, Sans-serif;
+    color: white;
+    background-color: rgb(43, 43, 44);
+    margin: 0;
+  }
+
+p {margin-bottom: 1.6em;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* IMAGEN PRINCIPAL */
+
+.imgprincipal{
+    text-align : center;
+   }
+
+/* PÁGINA PRODUCTOS */
+
+/* PÁGINA CONTACTO */
+
+body{
+    min-width: 100vh;
+    width: 100%;
+    font-family: Roboto; color: black;
+}
+
+.form__input{
+    font-family:inherit;
+}
+
+.form__cta{
+    font-family: inherit;
+}
+
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    pad: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30% green, blue);
+}
+
+.form__paragraph{
+    font-weight: 300;
+}
+
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form__group{
+    position: relative;
+    --color: #4a4a4a;
+}
+
+.form__input{
+    width: 100%;
+    background: none;
+    color:darkgrey;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form__input:focus + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color:rgb(170, 109, 30)
+}
+
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 5px;
+    transform: translate(10px);
+    transition: transform .5s, color .3s;
+}
